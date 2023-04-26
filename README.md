@@ -13,11 +13,11 @@
 
 ## Built with
 
-- REACT + VITE  with Linters JAVASCRIPT
+- REACT + VITE, HTML, CSS
 
 ## Link to the live page
 
-> Feel free to check the [conference capstone-link](https://ger619.github.io/Conference-Capstone/index.html).
+> Feel free to check the [Muranga Seals]().
 
 ## Authors
 
