@@ -9,8 +9,8 @@ const index = () => {
   return (
     <div className="bg-[#000] md:pr-72 pl-28 pt-12 pb-2 text-white">
       <div className="grid grid-cols-4 gap-4">
-        <div className="text-xl">murangaseals@gmail.com</div>
-        <div className="text-xl">0722 222 222</div>
+        <div className="">murangaseals@gmail.com</div>
+        <div className="">0722 222 222</div>
         <div className="flex space-between">
           <AiFillInstagram size={25} className="mr-10" />
           <BsTwitter size={25} className="mr-8" />
