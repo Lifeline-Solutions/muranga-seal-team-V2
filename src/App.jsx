@@ -1,12 +1,13 @@
-import './App.css'
+import "./App.css";
 import NavBar from "./Components/NavBar";
+import Hero from "./Components/Hero";
 
 const App = () => {
-    return (
-        <div className="App">
-            <NavBar />
-        <h1>App</h1>
-        </div>
-    );
-}
-export default App
+  return (
+    <div >
+      <NavBar />
+      <Hero />
+    </div>
+  );
+};
+export default App;
