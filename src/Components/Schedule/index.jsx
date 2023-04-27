@@ -16,11 +16,11 @@ const index = () => {
             <p>VS</p>
             <div className="flex flex-col">
               <img src={msealslogo} alt="msealslogo" />
-              <h1>Murang`&apos;`a Seals</h1>
+              <h1>Murang&apos;a Seals</h1>
             </div>
           </div>
           <h1 className="text-center w-[70%] mx-auto">
-            Murang`&apos;`a stadium , Email muranga seals to book a ticket today
+            Murang&apos;a stadium , Email muranga seals to book a ticket today
           </h1>
         </div>
 
@@ -33,11 +33,11 @@ const index = () => {
             <p>VS</p>
             <div className="flex flex-col">
               <img src={msealslogo} alt="msealslogo" />
-              <h1>Murang`&apos;`a Seals</h1>
+              <h1>Murang&apos;a Seals</h1>
             </div>
           </div>
           <h1 className="text-center w-[70%] mx-auto">
-            Murang`&apos;`a stadium , Email muranga seals to book a ticket today
+            Murang&apos;a stadium , Email muranga seals to book a ticket today
           </h1>
 
           <button className="bg-[#FAE115] text-black font-bold p-2 w-[40%] mx-auto">
