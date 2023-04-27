@@ -1,5 +1,3 @@
-import React from "react";
-import Link from "react-dom";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsTwitter } from "react-icons/bs";
 import { ImFacebook } from "react-icons/im";
