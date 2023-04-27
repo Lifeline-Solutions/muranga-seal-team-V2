@@ -1,4 +1,3 @@
-import React from "react";
 import banner from "../images/banner.png";
 import news1 from "../images/news1.png";
 import news2 from "../images/news2.png";
@@ -61,7 +60,10 @@ const index = () => {
       <div className="bg-white  flex  ">
         <div className="flex flex-col  justify-between ">
           {news.map((item) => (
-            <div className="flex justify-between p-2  group hover:bg-[#FAE115] hover:scale-110 transition-all duration-500 cursor-pointer">
+            <div
+              key={item.id}
+              className="flex justify-between p-2  group hover:bg-[#FAE115] hover:scale-110 transition-all duration-500 cursor-pointer"
+            >
               <div className="flex-col ">
                 <p className="bg-[#FAE115] p-2 flex group-hover:bg-black group-hover:text-white justify-center w-[50%] rounded-lg font-semibold">
                   Latest News
@@ -77,7 +79,10 @@ const index = () => {
         </div>
         <div className="flex flex-col items-end gap-4  justify-between">
           {featuredNews.map((item) => (
-            <div className="flex flex-col w-[303px]   text-white bg-black">
+            <div
+              key={item.id}
+              className="flex flex-col w-[303px]   text-white bg-black"
+            >
               <img src={item.image} alt="" className="w-[300px]" />
               <p className=" text-xs p-2">Featured</p>
               <p className="text-xl p-4 font-bold w-[90%]">{item.title}</p>
