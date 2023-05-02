@@ -1,7 +1,7 @@
 import {BsFacebook, BsInstagram, BsTwitter} from "react-icons/bs";
 import SportpesaLogo from "../images/SP_logo-01.png";
 import FinixCasinoLogo from "../images/finix-casino.png";
-import Logo from "../images/logo.png";
+import logo from "../images/logo.png";
 const Navigation = () => {
     return (
         <>
@@ -50,7 +50,7 @@ const Navigation = () => {
             <div>
             {/* Header three with logo */}
                 <div className="absolute top-0 bottom-0 left-2 xl:w-[180px] lg:w-[180px] md:w-[160px] sm:w-[120px] w-[120px]">
-                    <img src={Logo}/>
+                    <img src={logo}/>
                 </div>
 
 
