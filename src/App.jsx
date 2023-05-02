@@ -1,15 +1,20 @@
 import "./App.css";
 import NavBar from "./Components/NavBar";
-import Hero from "./Components/Hero";
+import Home from "./Components/Home/index.jsx";
 import Footer from "./Components/Footer";
-import Schedule from "./Components/Schedule";
+import { Route, Routes } from "react-router-dom";
+import News from "./Components/News/index.jsx";
+
 const App = () => {
   return (
     <div>
       <NavBar />
-      <Hero />
-      <Schedule />
-        <Footer />
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/news" element={<News />} />
+
+        </Routes>
+        <Footer/>
     </div>
   );
 };
