@@ -34,9 +34,15 @@ const Navigation = () => {
                             <NavLink exact="true" to="/team">
                                 <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">TEAM</li>
                             </NavLink>
-                            <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">TICKETS</li>
-                            <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">MEMBERSHIP</li>
-                            <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">OUR CLUB</li>
+                            <NavLink exact="true" to="/ticket">
+                                <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">TICKETS</li>
+                            </NavLink>
+                            <NavLink exact="true" to="/membership">
+                                <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">MEMBERSHIP</li>
+                            </NavLink>
+                            <NavLink exact="true" to="/ourclub">
+                                <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">OUR CLUB</li>
+                            </NavLink>
                             <li>
                                 <BsInstagram className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
                             </li>
@@ -57,7 +63,7 @@ const Navigation = () => {
 
                 <div className="absolute top-0 bottom-0 left-2 xl:w-[180px] lg:w-[180px] md:w-[160px] sm:w-[120px] w-[120px]">
                     <NavLink exact="true" to="/">
-                        <img src={logo}/>
+                        <img src={logo} alt="Muranga seals logo"/>
                     </NavLink>
                 </div>
             </div>
