@@ -1,7 +1,8 @@
-import {BsFacebook, BsInstagram, BsTwitter} from "react-icons/bs";
-import SportpesaLogo from "../images/SP_logo-01.png";
-import FinixCasinoLogo from "../images/finix-casino.png";
-import logo from "../images/logo.png";
+import {BsFacebook, BsInstagram, BsTiktok, BsTwitter, BsYoutube} from "react-icons/bs";
+import SportpesaLogo from "../../assets/SP_logo-01.png";
+import FinixCasinoLogo from "../../assets/finix-casino.png";
+import logo from "../../assets/logo.png";
+import {NavLink} from "react-router-dom";
 const Navigation = () => {
     return (
         <>
@@ -26,20 +27,46 @@ const Navigation = () => {
                 {/* Header two with navigation */}
                 <div className="bg-[#050505] p-4">
                     <div>
-                        <ul className="flex justify-end gap-5 text-[#f4e721] mt-2 p-2">
-                            <li className="hover:underline  decoration-[#F6F6F6] underline-offset-8 ">NEWS</li>
-                            <li className="hover:underline decoration-[#F6F6F6] underline-offset-8">TEAM</li>
-                            <li className="hover:underline decoration-[#F6F6F6] underline-offset-8">TICKETS</li>
-                            <li className="hover:underline decoration-[#F6F6F6] underline-offset-8">MEMBERSHIP</li>
-                            <li className="hover:underline decoration-[#F6F6F6] underline-offset-8">OUR CLUB</li>
+                        <ul className="flex justify-end gap-5 text-[#f6f6f6] mt-2 p-2">
+                            <NavLink exact="true" to="/news">
+                                <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">NEWS</li>
+                            </NavLink>
+                            <NavLink exact="true" to="/team">
+                                <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">TEAM</li>
+                            </NavLink>
+                            <NavLink exact="true" to="/ticket">
+                                <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">TICKETS</li>
+                            </NavLink>
+                            <NavLink exact="true" to="/membership">
+                                <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">MEMBERSHIP</li>
+                            </NavLink>
+                            <NavLink exact="true" to="/ourclub">
+                                <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">OUR CLUB</li>
+                            </NavLink>
                             <li>
-                                <BsInstagram className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/abolger/">
+                                    <BsInstagram className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                </a>
                             </li>
                             <li>
-                                <BsTwitter className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                <a target="_blank" rel="noreferrer" href="#">
+                                    <BsTwitter className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                </a>
                             </li>
                             <li>
-                                <BsFacebook className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                <a target="_blank" rel="noreferrer" href="#">
+                                    <BsFacebook className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noreferrer" href="#">
+                                    <BsYoutube className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noreferrer" href="#">
+                                    <BsTiktok className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                </a>
                             </li>
 
                         </ul>
@@ -49,11 +76,12 @@ const Navigation = () => {
             </div>
             <div>
             {/* Header three with logo */}
+
                 <div className="absolute top-0 bottom-0 left-2 xl:w-[180px] lg:w-[180px] md:w-[160px] sm:w-[120px] w-[120px]">
-                    <img src={logo}/>
+                    <NavLink exact="true" to="/">
+                        <img src={logo} alt="Muranga seals logo"/>
+                    </NavLink>
                 </div>
-
-
             </div>
         </>
 
