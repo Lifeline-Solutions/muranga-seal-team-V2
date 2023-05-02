@@ -49,7 +49,7 @@ const Navigation = () => {
             </div>
             <div>
             {/* Header three with logo */}
-                <div className="absolute top-0 bottom-0 left-2 w-[180px]">
+                <div className="absolute top-0 bottom-0 left-2 xl:w-[200px] lg:w-[180px] md:w-[120px] sm:w-[48px] w-[120px]">
                     <img src={Logo}/>
                 </div>
 
