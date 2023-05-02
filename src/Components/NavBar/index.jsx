@@ -27,11 +27,11 @@ const Navigation = () => {
                 <div className="bg-[#050505] p-4">
                     <div>
                         <ul className="flex justify-end gap-5 text-[#f4e721] mt-2 p-2">
-                            <li className="hover:underline  decoration-[#F6F6F6] underline-offset-8 ">News</li>
-                            <li className="hover:underline decoration-[#F6F6F6] underline-offset-8">Team</li>
-                            <li className="hover:underline decoration-[#F6F6F6] underline-offset-8">Tickets</li>
-                            <li className="hover:underline decoration-[#F6F6F6] underline-offset-8">Membership</li>
-                            <li className="hover:underline decoration-[#F6F6F6] underline-offset-8">Our Club</li>
+                            <li className="hover:underline  decoration-[#F6F6F6] underline-offset-8 ">NEWS</li>
+                            <li className="hover:underline decoration-[#F6F6F6] underline-offset-8">TEAM</li>
+                            <li className="hover:underline decoration-[#F6F6F6] underline-offset-8">TICKETS</li>
+                            <li className="hover:underline decoration-[#F6F6F6] underline-offset-8">MEMBERSHIP</li>
+                            <li className="hover:underline decoration-[#F6F6F6] underline-offset-8">OUR CLUB</li>
                             <li>
                                 <BsInstagram className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
                             </li>
@@ -49,7 +49,7 @@ const Navigation = () => {
             </div>
             <div>
             {/* Header three with logo */}
-                <div className="absolute top-0 bottom-0 left-2 xl:w-[200px] lg:w-[180px] md:w-[120px] sm:w-[48px] w-[120px]">
+                <div className="absolute top-0 bottom-0 left-2 xl:w-[180px] lg:w-[180px] md:w-[160px] sm:w-[120px] w-[120px]">
                     <img src={Logo}/>
                 </div>
 
