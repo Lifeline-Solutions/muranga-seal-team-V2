@@ -1,7 +1,7 @@
 import {BsFacebook, BsInstagram, BsTwitter} from "react-icons/bs";
 import SportpesaLogo from "../images/SP_logo-01.png";
 import FinixCasinoLogo from "../images/finix-casino.png";
-import Logo from "../images/Logo.png";
+import Logo from "../images/logo.png";
 const Navigation = () => {
     return (
         <>
