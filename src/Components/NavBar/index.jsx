@@ -1,4 +1,4 @@
-import {BsFacebook, BsInstagram, BsTwitter} from "react-icons/bs";
+import {BsFacebook, BsInstagram, BsTiktok, BsTwitter, BsYoutube} from "react-icons/bs";
 import SportpesaLogo from "../../assets/SP_logo-01.png";
 import FinixCasinoLogo from "../../assets/finix-casino.png";
 import logo from "../../assets/logo.png";
@@ -44,13 +44,29 @@ const Navigation = () => {
                                 <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">OUR CLUB</li>
                             </NavLink>
                             <li>
-                                <BsInstagram className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/abolger/">
+                                    <BsInstagram className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                </a>
                             </li>
                             <li>
-                                <BsTwitter className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                <a target="_blank" rel="noreferrer" href="#">
+                                    <BsTwitter className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                </a>
                             </li>
                             <li>
-                                <BsFacebook className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                <a target="_blank" rel="noreferrer" href="#">
+                                    <BsFacebook className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noreferrer" href="#">
+                                    <BsYoutube className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" rel="noreferrer" href="#">
+                                    <BsTiktok className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
+                                </a>
                             </li>
 
                         </ul>

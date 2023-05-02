@@ -1,5 +1,5 @@
-const index = () => {
-  return <div>About</div>;
+const Ticket = () => {
+  return <div>Tickets</div>;
 };
 
-export default index;
+export default Ticket;
