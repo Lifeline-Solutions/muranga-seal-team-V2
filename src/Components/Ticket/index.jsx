@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineDown } from "react-icons/ai";
 import SingleTicket from "./SingleTicket";
+import Membership from "./Membership";
 
 const Ticket = () => {
   return (
@@ -27,6 +28,7 @@ const Ticket = () => {
         <SingleTicket />
         <SingleTicket />
       </div>
+      <Membership />
     </div>
   );
 };
