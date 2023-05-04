@@ -12,6 +12,15 @@ const Ticket = () => {
           <AiOutlineDown className="mr-4" size={35} />
         </button>
       </div>
+      <div className="bg-[#D9D9D9] grid grid-cols-2 gap-4 p-6">
+        <div>
+          <button>Features</button>
+        </div>
+        <div className="flex justify-between pr-10">
+          <button>On sale</button>
+          <button>Now selling</button>
+        </div>
+      </div>
     </div>
   );
 };
