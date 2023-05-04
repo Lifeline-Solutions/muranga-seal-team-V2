@@ -47,7 +47,7 @@ const index = () => {
         />
         <div className="flex justify-between">
           <div>
-            <p className="w-[60%]">Murang'a seals may contact me by:</p>
+            <p className="w-[60%]">Murang`&lsquo;`a seals may contact me by:</p>
             <input
               type="text"
               placeholder="Phone No"

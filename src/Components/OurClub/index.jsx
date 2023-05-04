@@ -53,7 +53,7 @@ const index = () => {
 
       <div className="flex flex-col gap-4">
         {clubhistorycontent.map((clubhistory) => (
-          <div className={clubhistory.id % 2 ==! 0 ? "flex justify-between items-center border-t-2  border-[#FAE115] my-4 bg-gray-100 mx-auto w-[95%] p-4" : "flex justify-between flex-row-reverse items-center border-t-2  border-[#FAE115] my-4 bg-gray-100 mx-auto w-[95%] p-4"}>
+          <div key={clubhistory.id} className={clubhistory.id % 2 ==! 0 ? "flex justify-between items-center border-t-2  border-[#FAE115] my-4 bg-gray-100 mx-auto w-[95%] p-4" : "flex justify-between flex-row-reverse items-center border-t-2  border-[#FAE115] my-4 bg-gray-100 mx-auto w-[95%] p-4"}>
             <div className="flex flex-col  ">
               <h1 className="text-5xl font-bold mb-8">{clubhistory.title}</h1>
               <p className="w-[928px] h-[256px] text-xl">

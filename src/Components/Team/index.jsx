@@ -17,12 +17,14 @@ const Team = () => {
       name2: "Anyango",
       image: goalkeeper1,
       number: "01",
+      id:1,
     },
     {
       name1: "Kevin",
       name2: "Magona",
       image: goalkeeper2,
       number: "01",
+      id:2,
     },
   ];
   const defenders = [
@@ -31,17 +33,20 @@ const Team = () => {
       name2: "Semo",
       image: defender1,
       number: "06",
+      id:3,
     },
     {
       name1: "Henry",
       name2: "Omollo",
       image: defender2,
+      id:4,
       number: "03",
     },
     {
       name1: "Victory",
       name2: "Onyango",
       image: defender3,
+      id:5,
       number: "22",
     },
   ];
@@ -50,6 +55,7 @@ const Team = () => {
       name1: "Francis",
       name2: "Ocholla",
       image: midfielder1,
+      id:6,
       number: "06",
     },
     {
@@ -57,6 +63,7 @@ const Team = () => {
       name2: "Onyango",
       image: midfielder2,
       number: "22",
+      id:7,
     },
   ];
 
@@ -66,21 +73,26 @@ const Team = () => {
       name2: "Mutiso",
       image: forward1,
       number: "06",
+      id:8,
     },
     {
       name1: "Tom",
       name2: "Kangeta",
+
       image: forward2,
       number: "06",
+      id:9,
     },
   ];
 
   const coaches = [
     {
       image: coach1,
+      id:10,
     },
     {
       image: coach2,
+      id:11,
     },
   ];
 
@@ -95,7 +107,7 @@ const Team = () => {
         <h1 className="text-4xl p-4 font-bold">Goalkeepers</h1>
         <div className="flex p-2 gap-8">
           {goalkeepers.map((goalkeeper) => (
-            <div className="w-[300px] flex-flex-col cursor-pointer hover:scale-105 transition ease-in-out duration-500">
+            <div key={goalkeeper.id} className="w-[300px] flex-flex-col cursor-pointer hover:scale-105 transition ease-in-out duration-500">
               <img src={goalkeeper.image} alt="player" />
               <div className="flex justify-between">
                 <div className="flex flex-col">
@@ -114,7 +126,7 @@ const Team = () => {
         <h1 className="text-4xl p-4 font-bold">Defenders</h1>
         <div className="flex p-2 gap-8">
           {defenders.map((defender) => (
-            <div className="w-[300px] flex-flex-col cursor-pointer hover:scale-105 transition ease-in-out duration-500">
+            <div key={defender.id} className="w-[300px] flex-flex-col cursor-pointer hover:scale-105 transition ease-in-out duration-500">
               <img src={defender.image} alt="player" />
               <div className="flex justify-between">
                 <div className="flex flex-col">
@@ -133,7 +145,7 @@ const Team = () => {
         <h1 className="text-4xl p-4 font-bold">Midfielders</h1>
         <div className="flex p-2 gap-8">
           {midfielders.map((midfielder) => (
-            <div className="w-[300px] flex-flex-col cursor-pointer hover:scale-105 transition ease-in-out duration-500">
+            <div key={midfielder.id} className="w-[300px] flex-flex-col cursor-pointer hover:scale-105 transition ease-in-out duration-500">
               <img src={midfielder.image} alt="player" />
               <div className="flex justify-between">
                 <div className="flex flex-col">
@@ -152,7 +164,7 @@ const Team = () => {
         <h1 className="text-4xl p-4 font-bold">Forwards</h1>
         <div className="flex p-2 gap-8">
           {forwards.map((forward) => (
-            <div className="w-[300px] flex-flex-col cursor-pointer hover:scale-105 transition ease-in-out duration-500">
+            <div key={forward.id} className="w-[300px] flex-flex-col cursor-pointer hover:scale-105 transition ease-in-out duration-500">
               <img src={forward.image} alt="player" />
               <div className="flex justify-between">
                 <div className="flex flex-col">
@@ -171,7 +183,7 @@ const Team = () => {
         <h1 className="text-4xl p-4 font-bold">Coaches</h1>
         <div className="flex p-2 gap-8">
           {coaches.map((coach) => (
-            <div className="w-[300px] flex-flex-col cursor-pointer hover:scale-105 transition ease-in-out duration-500">
+            <div key={coach.id} className="w-[300px] flex-flex-col cursor-pointer hover:scale-105 transition ease-in-out duration-500">
               <img src={coach.image} alt="player" />
             </div>
           ))}
