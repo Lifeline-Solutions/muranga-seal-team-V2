@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineDown } from "react-icons/ai";
+import SingleTicket from "./SingleTicket";
 
 const Ticket = () => {
   return (
@@ -20,6 +21,11 @@ const Ticket = () => {
           <button>On sale</button>
           <button>Now selling</button>
         </div>
+      </div>
+      <div className="bg-[#FAE115]">
+        <SingleTicket />
+        <SingleTicket />
+        <SingleTicket />
       </div>
     </div>
   );
