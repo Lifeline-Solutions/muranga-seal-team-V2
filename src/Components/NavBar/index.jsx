@@ -77,7 +77,7 @@ const Navigation = () => {
             <div>
             {/* Header three with logo */}
 
-                <div className="absolute top-0 bottom-0 left-2 xl:w-[180px] lg:w-[180px] md:w-[160px] sm:w-[120px] w-[120px]">
+                <div className="absolute top-0 bottom-0 left-2 xl:w-[160px] lg:w-[160px] md:w-[140px] sm:w-[120px] w-[120px]">
                     <NavLink exact="true" to="/">
                         <img src={logo} alt="Muranga seals logo"/>
                     </NavLink>
