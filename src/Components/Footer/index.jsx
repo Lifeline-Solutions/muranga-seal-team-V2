@@ -5,78 +5,80 @@ import { AiOutlineSearch } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <div className="bg-[#000] lg:pr-48 md:pr-72 pl-28 pt-12 pb-2 text-white">
-      <div className="container justify-between">
-        <div className="grid grid-cols-4 gap-4 ">
-          <div className="">murangaseals@gmail.com</div>
-          <div className="">0722 222 222</div>
-          <div className="flex space-between">
-            <AiFillInstagram size={25} className="mr-10" />
-            <BsTwitter size={25} className="mr-8" />
-            <ImFacebook size={25} />
-          </div>
-          <div>
-            <AiOutlineSearch />
-          </div>
-        </div>
-        <div className="flex space-between pt-6">
-          <div className="mr-20">
-            <h5 className="text-[#fae115]">News</h5>
-            <ul>
-              <li>Home Jersey</li>
-              <li>Season Jersey</li>
-              <li>News trophy</li>
-              <li>room</li>
-            </ul>
-          </div>
-          <div className="mr-14">
-            <h5 className="text-[#fae115]">Teams</h5>
-            <ul>
-              <li>Home Jersey</li>
-              <li>Season Jersey</li>
-              <li>News trophy</li>
-              <li>room</li>
-            </ul>
-          </div>
-          <div className="mr-20">
-            <h5 className="text-[#fae115]">Tickets</h5>
-            <ul>
-              <li>Home Jersey</li>
-              <li>Season Jersey</li>
-              <li>News trophy</li>
-              <li>room</li>
-            </ul>
-          </div>
+    <div className="bg-[#000]  p-8  text-white">
+    
 
-          <div className="mr-24">
-            <h5 className="text-[#fae115]">Memberships</h5>
-            <ul>
-              <li>Home Jersey</li>
-              <li>Season Jersey</li>
-              <li>News trophy</li>
-              <li>room</li>
-            </ul>
-          </div>
-
-          <div>
-            <h5 className="text-[#fae115]">Club & History</h5>
-            <ul>
-              <li>Home Jersey</li>
-              <li>Season Jersey</li>
-              <li>News trophy</li>
-              <li>room</li>
-            </ul>
-          </div>
+      <div className="mx-auto py-8 w-[80%] flex justify-between">
+        <h1>Murangaseals@gmail.com</h1>
+        <h1>+2547 000 000 000</h1>
+        <div className="flex gap-4 justify-between">
+          <AiFillInstagram size={40} />
+          <BsTwitter size={35} />
+          <ImFacebook size={35} />
         </div>
-        <div>
-          <h1 className="text-3xl font-bold pt-4">Newsletter</h1>
-          <button className="bg-[#fae115] text-[#000] text-start p-2 w-[15%] text-2xl font-bold">
-            Subscribe
-          </button>
-        </div>
-
+        <AiOutlineSearch size={35} />
       </div>
 
+      <div className="w-[80%] my-8 mx-auto flex justify-between">
+        <div className="flex flex-col gap-2">
+          <h5 className="text-[#fae115]">News</h5>
+          <ul>
+            <li>Home Jersey</li>
+            <li>Season Jersey</li>
+            <li>News trophy</li>
+            <li>room</li>
+          </ul>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h5 className="text-[#fae115]">Tickets</h5>
+          <ul>
+            <li>Home Jersey</li>
+            <li>Season Jersey</li>
+            <li>News trophy</li>
+            <li>room</li>
+          </ul>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h5 className="text-[#fae115]">Teams</h5>
+          <ul>
+            <li>Home Jersey</li>
+            <li>Season Jersey</li>
+            <li>News trophy</li>
+            <li>room</li>
+          </ul>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h5 className="text-[#fae115]">Memberships</h5>
+          <ul>
+            <li>Home Jersey</li>
+            <li>Season Jersey</li>
+            <li>News trophy</li>
+            <li>room</li>
+          </ul>
+        </div>
+        <div className="flex flex-col gap-2">
+          <h5 className="text-[#fae115]">Club & History</h5>
+          <ul>
+            <li>Home Jersey</li>
+            <li>Season Jersey</li>
+            <li>News trophy</li>
+            <li>room</li>
+          </ul>
+        </div>
+      </div>
+      <div className="w-[80%] mx-auto  flex  flex-col gap-2">
+        <h1 className="text-3xl  font-bold pt-4">Newsletter</h1>
+        <div className="flex items-center gap-1">
+          <input
+            type="text"
+            placeholder="Enter your email"
+            className="h-[50px] w-[455px] p-2 bg-[#A8A2A2] focus:outline-none placeholder-[#D9D9D9]"
+          />
+          <p className="text-3xl font-bold text-[#F4E721] p-2 cursor-pointer">
+            Subscribe
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
