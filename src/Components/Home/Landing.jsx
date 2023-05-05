@@ -50,7 +50,7 @@ const Landing = () => {
   ];
   return (
     <div
-      className="bg-center flex justify-end bg-no-repeat bg-cover "
+      className="bg-center flex justify-end bg-no-repeat bg-cover mt-4"
       style={{
         backgroundImage: `url(${banner})`,
         backgroundRepeat: "no-repeat",
