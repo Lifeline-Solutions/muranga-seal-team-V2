@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineDown } from "react-icons/ai";
 import SingleTicket from "./SingleTicket";
 import Membership from "./Membership";

@@ -1,4 +1,3 @@
-import React from "react";
 import banner from "../../assets/clubhistory1.png";
 
 const Membership = () => {

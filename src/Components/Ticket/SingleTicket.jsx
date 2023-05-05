@@ -1,4 +1,3 @@
-import React from "react";
 import banner from "../../assets/logo.png";
 import wazito from "../../assets/wazitologo.png";
 
@@ -10,7 +9,7 @@ const SingleTicket = () => {
         <img src={wazito} alt="logo" height={150} width={150} />
       </div>
       <div className="flex flex-col justify-between">
-        <h1>Murang'a seals</h1>
+        <h1>Murang&apos;a seals</h1>
         <div className="flex flex-col">
           <div className="flex align-center text-center">
             <p>Sun 29 April</p>
