@@ -11,6 +11,32 @@ const Navigation = () => {
                 <div className="p-2 content-end bg-[#F6F6F6] border-b-4 border-[#f4e721]" >
                     <ul className={"flex justify-end gap-5 p-2 text-[#F6F6F6]"}>
                         <li>
+                            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/abolger/">
+                                <BsInstagram className="text-xl text-[#050505] hover:text-[#f4e721]" />
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noreferrer" href="#">
+                                <BsTwitter className="text-xl text-[#050505] hover:text-[#f4e721]" />
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noreferrer" href="#">
+                                <BsFacebook className="text-xl text-[#050505] hover:text-[#f4e721]" />
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" rel="noreferrer" href="#">
+                                <BsYoutube className="text-xl text-[#050505] hover:text-[#f4e721]" />
+                            </a>
+                        </li>
+                        <li className="mr-10">
+                            <a target="_blank" rel="noreferrer" href="#">
+                                <BsTiktok className="text-xl text-[#050505] hover:text-[#f4e721]" />
+                            </a>
+                        </li>
+
+                        <li>
                             <a target="_blank" rel="noreferrer" href="https://www.ke.sportpesa.com/en/sports-betting/football-1/">
                                 <img src={SportpesaLogo} alt="Sportpesa Logo" className="w-[100px] text-[#F6F6F6]" />
                             </a>
@@ -43,31 +69,6 @@ const Navigation = () => {
                             <NavLink exact="true" to="/ourclub">
                                 <li className="hover:underline decoration-[#f4e721] underline-offset-8 hover:text-[#f4e721]">OUR CLUB</li>
                             </NavLink>
-                            <li>
-                                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/abolger/">
-                                    <BsInstagram className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" rel="noreferrer" href="#">
-                                    <BsTwitter className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" rel="noreferrer" href="#">
-                                    <BsFacebook className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" rel="noreferrer" href="#">
-                                    <BsYoutube className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" rel="noreferrer" href="#">
-                                    <BsTiktok className="text-xl text-[#f6f6f6] hover:text-[#f4e721]" />
-                                </a>
-                            </li>
 
                         </ul>
 
