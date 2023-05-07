@@ -16,17 +16,17 @@ const Navigation = () => {
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noreferrer" href="#">
+                            <a target="_blank" rel="noreferrer" href="https://twitter.com/Mseal_FC">
                                 <BsTwitter className="text-xl text-[#050505] hover:text-[#f4e721]" />
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noreferrer" href="#">
+                            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/msealfc/">
                                 <BsFacebook className="text-xl text-[#050505] hover:text-[#f4e721]" />
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" rel="noreferrer" href="#">
+                            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/@murangasealfc">
                                 <BsYoutube className="text-xl text-[#050505] hover:text-[#f4e721]" />
                             </a>
                         </li>
