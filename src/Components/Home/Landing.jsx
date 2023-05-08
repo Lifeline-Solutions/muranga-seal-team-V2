@@ -50,7 +50,7 @@ const Landing = () => {
   ];
   return (
     <div
-      className="bg-center flex justify-end bg-no-repeat bg-cover mt-4"
+      className="bg-center flex justify-end bg-no-repeat bg-cover m-[28px]"
       style={{
         backgroundImage: `url(${banner})`,
         backgroundRepeat: "no-repeat",
@@ -58,11 +58,11 @@ const Landing = () => {
       }}
     >
       <div className="bg-white  flex  ">
-        <div className="flex flex-col  justify-between ">
+        <div className="flex flex-col  justify-between mr-[20px]">
           {news.map((item) => (
             <div
               key={item.id}
-              className="flex justify-between p-2  group hover:bg-[#FAE115] hover:scale-110 transition-all duration-500 cursor-pointer"
+              className="flex justify-between p-2  group hover:bg-[#FAE115] hover:scale-105 transition-all duration-500 cursor-pointer"
             >
               <div className="flex-col ">
                 <p className="bg-[#FAE115] p-2 flex group-hover:bg-black group-hover:text-white justify-center w-[50%] rounded-lg font-semibold">
