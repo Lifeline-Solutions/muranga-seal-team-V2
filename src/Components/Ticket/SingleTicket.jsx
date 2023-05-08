@@ -17,7 +17,7 @@ const SingleTicket = () => {
             <div className="border-l-2 border-[#000] h-5"></div>
             <p>2:00pm</p>
             <div className="border-l-2 border-[#000] h-5"></div>
-            <p>Muranga stadium</p>
+            <p>Murang&apos;a stadium</p>
           </div>
 
           <div>

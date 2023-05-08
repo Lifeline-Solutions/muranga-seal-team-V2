@@ -4,7 +4,7 @@ const Membership = () => {
   return (
     <div className="flex">
       <div className="w-[50%] flex flex-col items-center text-center gap-5 justify-center p-5">
-        <h1 className="font-bold text-5xl">Muranga seals membership</h1>
+        <h1 className="font-bold text-5xl">Murang&apos;a Seal membership</h1>
         <p className="text-4xl font-light">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
