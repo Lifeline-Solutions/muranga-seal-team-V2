@@ -45,7 +45,7 @@ const index = () => {
 
   return (
     <div>
-      <div className="h-[158px] flex justify-start text-5xl font-bold p-4 items-center bg-[#FAE115]">
+      <div className="p-8 bg-[#FAE115] font-bold uppercase text-5xl">
         CLUB & HISTORY
       </div>
 
