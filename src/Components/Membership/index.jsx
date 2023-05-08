@@ -1,11 +1,11 @@
 const index = () => {
   return (
     <div>
-      <div className="h-[158px] flex justify-start text-5xl font-bold p-4 items-center bg-[#FAE115]">
+      <div className="p-8 bg-[#FAE115] font-bold uppercase text-5xl">
         Membership
       </div>
-      <div className="w-[1450px] flex flex-col gap-4 my-24 mx-auto">
-        <h1 className="text-6xl font-bold">
+      <div className="w-[1280px] flex flex-col gap-4 my-24 mx-auto">
+        <h1 className="text-4xl font-bold">
           JOIN OUR MEMBERSHIP TODAY AND ENJOY OUR PREMIUM SERVICES
         </h1>
         <p>
@@ -47,7 +47,7 @@ const index = () => {
         />
         <div className="flex justify-between">
           <div>
-            <p className="w-[60%]">Murang`&lsquo;`a seals may contact me by:</p>
+            <p className="w-[60%]">Murang&lsquo;a seals may contact me by:</p>
             <input
               type="text"
               placeholder="Phone No"
@@ -56,16 +56,16 @@ const index = () => {
           </div>
           <div className="w-[855px] text-xl">
             Please let us know using the dropdown if you would like to be
-            contacted by Muranga seals and its group companies with news and
-            promotional information about Muranga seals its official sponsors
+            contacted by Murang&lsquo;a seals and its group companies with news and
+            promotional information about Murang&lsquo;a seals its official sponsors
             and partners and their products and services, where we have the
             relevant contact details. Please read our Privacy Policy to learn
             more about us and its group companies, how we use your information
             and how to change your mind about receiving marketing from us.
           </div>
         </div>
-        <button className="w-[1186px] mt-16  mx-auto h-[166px] bg-[#F4E721] text-5xl text-black">
-          Register
+        <button className="w-[300px] mt-16  mx-auto p-4 bg-[#F4E721] text-3xl text-black">
+          REGISTER
         </button>
       </div>
     </div>
