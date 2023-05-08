@@ -13,7 +13,7 @@ const Coaches = () => {
         },
     ];
     return (<>
-            <div className="my-4">
+            <div className="my-4 ml-8">
                 <h1 className="text-4xl p-4 font-bold">Coaches</h1>
                 <div className="flex p-2 gap-8">
                     {coaches.map((coach) => (

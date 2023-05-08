@@ -57,13 +57,10 @@ const Landing = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="bg-white  flex  ">
+      <div className="bg-white  flex">
         <div className="flex flex-col  justify-between mr-[20px]">
           {news.map((item) => (
-            <div
-              key={item.id}
-              className="flex justify-between p-2  group hover:bg-[#FAE115] hover:scale-105 transition-all duration-500 cursor-pointer"
-            >
+            <div key={item.id} className="flex justify-between p-2  group hover:bg-[#FAE115] hover:scale-105 transition-all duration-500 cursor-pointer">
               <div className="flex-col ">
                 <p className="bg-[#FAE115] p-2 flex group-hover:bg-black group-hover:text-white justify-center w-[50%] rounded-lg font-semibold">
                   Latest News
