@@ -1,10 +1,19 @@
+import { useState } from "react";
 import banner from "../../assets/banner.png";
 import news1 from "../../assets/news1.png";
 import news2 from "../../assets/news2.png";
 import news3 from "../../assets/news3.png";
 import news4 from "../../assets/news4.png";
 import featured1 from "../../assets/featured1.png";
+
 const Landing = () => {
+  const [current, setCurrent] = useState(0);
+  const images = [news1, news2, news3, news4];
+  const changeImage = () => {
+    setTimeout(() => {
+      setCurrent(current === images.length - 1 ? 0 : current + 1);
+    }, 500);
+  };
   const news = [
     {
       id: 1,
@@ -52,7 +61,7 @@ const Landing = () => {
     <div
       className="bg-center flex justify-end bg-no-repeat bg-cover m-[28px]"
       style={{
-        backgroundImage: `url(${banner})`,
+        backgroundImage: `url(${images[current] || banner})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
@@ -60,7 +69,11 @@ const Landing = () => {
       <div className="bg-white  flex">
         <div className="flex flex-col  justify-between mr-[20px]">
           {news.map((item) => (
-            <div key={item.id} className="flex justify-between p-2  group hover:bg-[#FAE115] hover:scale-105 transition-all duration-500 cursor-pointer">
+            <div
+              key={item.id}
+              className="flex justify-between p-2  group hover:bg-[#FAE115] hover:scale-105 transition-all duration-500 cursor-pointer"
+              onMouseEnter={changeImage}
+            >
               <div className="flex-col ">
                 <p className="bg-[#FAE115] p-2 flex group-hover:bg-black group-hover:text-white justify-center w-[50%] rounded-lg font-semibold">
                   Latest News
