@@ -9,7 +9,7 @@ const SingleTicket = () => {
         <img src={wazito} alt="logo" height={150} width={150} />
       </div>
       <div className="flex flex-col justify-between">
-        <h1>Murang&apos;a seals</h1>
+        <h1>Murang&apos;a Seal vs Wazito FC</h1>
         <div className="flex flex-col">
           <div className="flex align-center text-center">
             <p>Sun 29 April</p>
@@ -17,7 +17,7 @@ const SingleTicket = () => {
             <div className="border-l-2 border-[#000] h-5"></div>
             <p>2:00pm</p>
             <div className="border-l-2 border-[#000] h-5"></div>
-            <p>Murang&apos;a stadium</p>
+            <p>St. Sebastian Park</p>
           </div>
 
           <div>
