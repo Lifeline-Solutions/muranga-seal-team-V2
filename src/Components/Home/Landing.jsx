@@ -58,20 +58,16 @@ const Landing = () => {
     },
   ];
   return (
-    <div
-      className="bg-center flex justify-end bg-no-repeat bg-cover m-[28px]"
-      style={{
-        backgroundImage: `url(${banner})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
-      <div className="bg-white  flex">
-        <div className="flex flex-col  justify-between mr-[20px]">
+    <div className="flex flex-col md:flex-row  m-4 md:m-[28px]">
+      <div className="md:w-[40%]">
+        <img src={banner} alt="" className="md:h-[650px] h-[400px]" />
+      </div>
+      <div className="bg-white  flex flex-col md:flex-row ">
+        <div className="flex flex-col  justify-between md:mr-[20px]">
           {news.map((item) => (
             <div
               key={item.id}
-              className="flex justify-between p-2  group hover:bg-[#FAE115] hover:scale-105 transition-all duration-500 cursor-pointer"
+              className="flex justify-between mt-5 p-2  group hover:bg-[#FAE115] hover:scale-105 transition-all duration-500 cursor-pointer"
               onMouseEnter={changeImage}
             >
               <div className="flex-col ">
@@ -87,13 +83,13 @@ const Landing = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col items-end gap-4  justify-between">
+        <div className="flex flex-col md:items-end mt-5 gap-4  justify-between">
           {featuredNews.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col w-[303px]   text-white bg-black"
+              className="flex flex-col md:w-[303px]   text-white bg-black"
             >
-              <img src={item.image} alt="" className="w-[300px]" />
+              <img src={item.image} alt="" className="md:w-[300px]" />
               <p className=" text-xs p-2">Featured</p>
               <p className="text-xl p-4 font-bold w-[90%]">{item.title}</p>
             </div>

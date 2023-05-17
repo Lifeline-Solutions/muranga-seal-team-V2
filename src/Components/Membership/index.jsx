@@ -4,8 +4,8 @@ const index = () => {
       <div className="p-8 bg-[#FAE115] font-bold uppercase text-5xl">
         Membership
       </div>
-      <div className="w-[1280px] flex flex-col gap-4 my-24 mx-auto bg-[#F7F3ED] p-8">
-        <h1 className="text-5xl ">
+      <div className="md:w-[1280px] flex flex-col gap-4 my-24 md:mx-auto bg-[#F7F3ED] md:p-8">
+        <h1 className="md:text-5xl text-4xl ">
           JOIN OUR MEMBERSHIP TODAY AND ENJOY OUR PREMIUM SERVICES
         </h1>
         <p className="text-xl">

@@ -4,9 +4,9 @@ import msealslogo from "../../assets/msealslogo.png";
 
 const Schedule = () => {
   return (
-    <div className="bg-black text-white px-4 py-8 ml-[28px] mr-[28px]">
+    <div className="bg-black text-white px-4 py-8 md:ml-[28px] md:mr-[28px]">
       <h1 className="uppercase">Match Schedule</h1>
-      <div className="flex justify-between ">
+      <div className="flex flex-col md:flex-row justify-between ">
         <div className=" text-center border-r  flex flex-col gap-2 border-white">
           <div className="flex gap-4 mt-8 items-center ">
             <div className="flex ml-4 mr-12  flex-col ">
