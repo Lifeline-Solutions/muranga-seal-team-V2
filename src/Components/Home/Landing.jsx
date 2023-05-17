@@ -61,7 +61,7 @@ const Landing = () => {
     <div
       className="bg-center flex justify-end bg-no-repeat bg-cover m-[28px]"
       style={{
-        backgroundImage: `url(${images[current] || banner})`,
+        backgroundImage: `url(${banner})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
