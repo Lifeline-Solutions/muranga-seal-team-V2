@@ -17,7 +17,7 @@ const Landing = () => {
   const news = [
     {
       id: 1,
-      title: "WAZITO FC  1-0 MURANGA SEAL ",
+      title: "AQUINAS FC  1-0 MURANGA SEAL ",
       description: "Penalty for Wazito fc on the ground  ",
       date: " 20th/ April/ 2023 ",
       image: news1,

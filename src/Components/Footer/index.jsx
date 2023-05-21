@@ -83,7 +83,7 @@ const Footer = () => {
       <div className="bg-[#000] block md:hidden">
         <div className="mx-6">
           <h1 className="text-white text-2xl py-4 font-bold">
-            Explore Murang'a seals app
+            Explore Murang&apos;a seals app
           </h1>
           <div className="text-white flex gap-10 ">
             <div className="">
