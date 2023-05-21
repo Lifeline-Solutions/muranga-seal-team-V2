@@ -53,14 +53,23 @@ const index = () => {
 
       <div className="flex flex-col gap-4">
         {clubhistorycontent.map((clubhistory) => (
-          <div key={clubhistory.id} className={clubhistory.id % 2 ==! 0 ? "flex justify-between items-center border-t-2  border-[#FAE115] my-4 bg-gray-100 mx-auto w-[95%] p-4" : "flex justify-between flex-row-reverse items-center border-t-2  border-[#FAE115] my-4 bg-gray-100 mx-auto w-[95%] p-4"}>
+          <div
+            key={clubhistory.id}
+            className={
+              clubhistory.id % 2 == !0
+                ? "flex flex-col-reverse md:flex-row md:justify-between items-center border-t-2  border-[#FAE115] my-4 bg-gray-100 mx-auto w-[95%] p-4"
+                : "flex   justify-between flex-col-reverse md:flex-row-reverse items-center border-t-2  border-[#FAE115] my-4 bg-gray-100 mx-auto w-[95%] p-4"
+            }
+          >
             <div className="flex flex-col  ">
-              <h1 className="text-5xl font-bold mb-8">{clubhistory.title}</h1>
-              <p className="w-[928px] h-[256px] text-xl">
+              <h1 className="md:text-5xl text-3xl uppercase mt-5 font-bold mb-8">
+                {clubhistory.title}
+              </h1>
+              <p className="md:w-[928px] md:h-[256px] text-xl">
                 {clubhistory.content}
               </p>
 
-              <button className="w-[303px] h-[81px] bg-[#F4E721] p-4 text-3xl ">
+              <button className="w-[303px] h-[81px] bg-[#F4E721] mt-5 p-4 text-3xl ">
                 Read More
               </button>
             </div>

@@ -11,9 +11,25 @@ const Tweets = () => {
   return (
     <div>
       <Swiper
-        className="pr-20"
+        className="md:pr-20"
         spaceBetween={50}
-        slidesPerView={3}
+        breakpoints={{
+          // when window width is >= 640px
+          640: {
+            width: 640,
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            width: 768,
+            slidesPerView: 1,
+          },
+          // when window width is >= 1200px
+          1200: {
+            width: 1200,
+            slidesPerView: 3,
+          },
+        }}
         // onSlideChange={() => console.log("slide change")}
         // onSwiper={(swiper) => console.log(swiper)}
         // navigation={true}
@@ -55,7 +71,7 @@ const Tweets = () => {
           <p className="font-bold z-30 text-2xl">
             We are mentoring the future team leaders locally
           </p>
-          <p className="text-[#F4EEEEB8] font-bold text-8xl absolute top-[35%] left-[70%] z-0">
+          <p className="text-[#F4EEEEB8] font-bold text-8xl absolute md:top-[35%] md:left-[70%] z-0">
             03
           </p>
           <button className="bg-[#FAE115] font-extralight p-2 my-4">

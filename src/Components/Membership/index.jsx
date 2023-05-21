@@ -1,11 +1,11 @@
 const index = () => {
   return (
-    <div>
-      <div className="p-8 bg-[#FAE115] font-bold uppercase text-5xl">
+    <div className="p-5 md:p-0">
+      <div className="md:p-8 md:bg-[#FAE115] font-bold uppercase text-5xl">
         Membership
       </div>
-      <div className="w-[1280px] flex flex-col gap-4 my-24 mx-auto bg-[#F7F3ED] p-8">
-        <h1 className="text-5xl ">
+      <div className="md:w-[1280px] flex flex-col gap-4 md:my-24 md:mx-auto bg-[#F7F3ED] md:p-8">
+        <h1 className="md:text-5xl text-2xl ">
           JOIN OUR MEMBERSHIP TODAY AND ENJOY OUR PREMIUM SERVICES
         </h1>
         <p className="text-xl">
@@ -29,7 +29,7 @@ const index = () => {
           </div>
         </div>
 
-        <div className="flex justify-between">
+        <div className="flex  justify-between">
           <input
             type="text"
             placeholder="Title"
@@ -60,9 +60,9 @@ const index = () => {
           placeholder="Email *"
           className="h-[50px] bg-[#F7F3ED] w-[100%] p-2 border-b border-black focus:outline-none"
         />
-        <div className="flex justify-between">
+        <div className="flex flex-col md:flex-row justify-between">
           <div>
-            <p className="w-[60%] mb-6">
+            <p className="md:w-[60%] mb-6">
               Murang&lsquo;a seals may contact me by:
             </p>
             <input
@@ -71,7 +71,7 @@ const index = () => {
               className="h-[50px] w-[100%] p-2 border-b bg-[#F7F3ED] border-black focus:outline-none"
             />
           </div>
-          <div className="w-[855px] text-xl">
+          <div className="md:w-[855px] mt-3 md:mt-0 text-xl">
             Please let us know using the dropdown if you would like to be
             contacted by Murang&lsquo;a seals and its group companies with news
             and promotional information about Murang&lsquo;a seals its official
@@ -82,7 +82,7 @@ const index = () => {
             from us.
           </div>
         </div>
-        <button className="w-[300px] mt-16  mx-auto p-4 bg-[#F4E721] text-3xl text-black">
+        <button className="w-[300px] mt-10 mb-10 md:mb-10 md:mt-16  mx-auto p-4 bg-[#F4E721] text-3xl text-black">
           REGISTER
         </button>
       </div>

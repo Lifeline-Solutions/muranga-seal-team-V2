@@ -3,8 +3,8 @@ import wazito from "../../assets/wazitologo.png";
 
 const SingleTicket = () => {
   return (
-    <div className="bg-[#FCFEE9] flex justify-between p-10 m-2">
-      <div className="flex align-center">
+    <div className="bg-[#FCFEE9] flex justify-between md:p-10 m-2">
+      <div className=" align-center hidden md:flex">
         <img src={banner} alt="logo" height={150} width={150} />
         <img src={wazito} alt="logo" height={150} width={150} />
       </div>
