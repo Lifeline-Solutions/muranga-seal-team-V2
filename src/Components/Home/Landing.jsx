@@ -58,7 +58,7 @@ const Landing = () => {
     },
   ];
   return (
-    <div className="flex flex-col md:flex-row  m-4 md:m-[28px]">
+    <div className="flex flex-col md:flex-row mt-16  m-4 md:m-[28px]">
       <div className="md:w-[40%]">
         <img src={banner} alt="" className="md:h-[650px] h-[400px]" />
       </div>

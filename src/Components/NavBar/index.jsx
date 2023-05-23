@@ -6,7 +6,12 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 import { React, useState, useEffect } from "react";
-import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from "react-icons/ai";
+import {
+  AiOutlineClose,
+  AiOutlineMenu,
+  AiOutlineSearch,
+  AiOutlineUser,
+} from "react-icons/ai";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { FiPhoneCall } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
@@ -57,7 +62,7 @@ const Navigation = () => {
     <>
       <div>
         {/* Header one with sponsors */}
-        <div className="p-2 content-end bg-[#F6F6F6] border-b-4 border-[#f4e721]">
+        <div className="p-2 content-end bg-[#F6F6F6] border-b-4 border-[#f4e721] hidden md:block">
           <ul className={"flex justify-end gap-5 p-2 text-[#F6F6F6]"}>
             <li>
               <a target="_blank" rel="noreferrer" href="#">
@@ -137,7 +142,7 @@ const Navigation = () => {
           <div className="flex justify-between md:justify-end items-center w-full md:mt-0 h-full  md:px-4 py-7 px-2 2xl:px-16 rounded">
             <div className="md:absolute md:top-0 bottom-0 left-2 xl:w-[180px] mt-5 md:mt-0 lg:w-[160px] md:w-[140px] sm:w-[120px] w-[120px]">
               <NavLink exact="true" to="/">
-                <img src={logo} alt="Muranga seals logo" />
+                <img src={logo} alt="Muranga seals logo" className="h-28" />
               </NavLink>
             </div>
             <div>
@@ -188,85 +193,100 @@ const Navigation = () => {
                 className="md:hidden flex justify-between items-center w-full h-full"
                 onClick={handleNav}
               >
-                <HiShoppingCart
-                  size={40}
-                  className="text-[#f4e721] text-center align-middle justify-center mr-3 "
+                <AiOutlineUser
+                  size={25}
+                  className="text-[#fff] text-center align-middle justify-center mr-3 "
                 />
-                <AiOutlineSearch className="text-[#f4e721]" />
-                <RiMenu5Line size={40} className="text-[#f4e721]" />
+                <AiOutlineSearch size={25} className="text-[#fff] mr-4" />
+                <AiOutlineMenu size={25} className="text-[#fff]" />
               </div>
             </div>
+          </div>
+          <div className="p-2 content-end bg-[#f4e721] border-b-4 border-[#f4e721] block md:hidden ">
+            <ul className={"flex justify-end gap-5 p-2 text-[#F6F6F6]"}>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.ke.sportpesa.com/en/sports-betting/football-1/"
+                >
+                  <img
+                    src={SportpesaLogo}
+                    alt="Sportpesa Logo"
+                    className="w-[100px] text-[#F6F6F6]"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.ke.sportpesa.com/en/sports-betting/football-1/"
+                >
+                  <img
+                    src={FinixCasinoLogo}
+                    alt="Sportpesa Logo"
+                    className="w-[100px] text-[#F6F6F6]"
+                  />
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div
             className={
-              nav
-                ? "md:hiddden fixed left-0 top-0 w-full h-screen bg-[#050505]"
-                : ""
+              nav ? "md:hiddden fixed left-0 top-0 w-full h-screen " : ""
             }
           >
             <div
               className={
                 nav
-                  ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%]  h-screen bg-[#000] text-white p-2 ease-in duration-500"
+                  ? " fixed left-0 top-0 w-[100%] sm:w-[60%] md:w-[45%]  h-screen bg-[#fff] text-white p-2 ease-in duration-500"
                   : "fixed left-[-100%] top-0  p-10 ease-in duration-500"
               }
             >
               <div>
                 <div className="flex justify-between items-center w-full mt-3 px-3">
-                  <Link className="font-bold text-4xl uppercase animate-pulse">
-                    Mechanic
-                  </Link>
+                  <div className="block md:hidden">
+                    <NavLink exact="true" to="/">
+                      <img
+                        src={logo}
+                        alt="Muranga seals logo"
+                        className="h-36"
+                      />
+                    </NavLink>
+                  </div>
                   <div
                     onClick={handleNav}
-                    className="cursor-pointer text-[#fae115]"
+                    className="cursor-pointer text-[#000]"
                   >
-                    <AiOutlineClose size={35} />
+                    <AiOutlineClose size={35} className="mb-10 mr-8" />
                   </div>
                 </div>
               </div>
               <div>
                 <div className="flex flex-col  py-4">
-                  <ul>
-                    <Link to="/" onClick={handleNav}>
-                      <li className="ml-3 text-xl">Home</li>
-                    </Link>
-                    <li className="relative">
-                      <div
-                        className="flex items-center justify-between px-3 py-4 cursor-pointer"
-                        onClick={handleServicesClick}
-                      >
-                        <div className="text-xl">Services</div>
-                        <div>
-                          <BsChevronDown size={25} className={``} />
-                        </div>
-                      </div>
-                      {showServicesDetails && (
-                        <ul className="left-full bg-[#000] py-2 rounded-lg shadow-lg">
-                          <Link to="/services">
-                            <li
-                              className="text-[#fff] text-xl py-1 px-10 hover:bg-gray-200"
-                              onClick={handleNav}
-                            >
-                              Services
-                            </li>
-                          </Link>
-                          <Link to="/performance" onClick={handleNav}>
-                            <li className="text-[#fff] text-xl py-1 px-10 hover:bg-gray-200">
-                              Service Details
-                            </li>
-                          </Link>
-                        </ul>
-                      )}
-                    </li>
-                    <Link to="/store" onClick={handleNav}>
-                      <li className="ml-3 text-xl">Store</li>
-                    </Link>
-                    <Link to="/about" onClick={handleNav}>
-                      <li className="py-4 text-xl ml-3 cursor-pointer">
-                        About
+                  <ul className="flex flex-col gap-5">
+                    <NavLink exact="true" to="/news" onClick={handleNav}>
+                      <li className="hover:underline text-[#000] underline-offset-8 hover:text-[#f4e721]">
+                        NEWS
                       </li>
-                    </Link>
+                    </NavLink>
+                    <NavLink exact="true" to="/news" onClick={handleNav}>
+                      <li className="hover:underline text-[#000] underline-offset-8 hover:text-[#f4e721]">
+                        NEWS
+                      </li>
+                    </NavLink>
+                    <NavLink exact="true" to="/membership" onClick={handleNav}>
+                      <li className="hover:underline text-[#000] underline-offset-8 hover:text-[#f4e721]">
+                        MEMBERSHIP
+                      </li>
+                    </NavLink>
+                    <NavLink exact="true" to="/ourclub" onClick={handleNav}>
+                      <li className="hover:underline text-[#000] underline-offset-8 hover:text-[#f4e721]">
+                        OUR CLUB
+                      </li>
+                    </NavLink>
                   </ul>
                 </div>
               </div>
