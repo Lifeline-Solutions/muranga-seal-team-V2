@@ -51,12 +51,6 @@ const Navigation = () => {
   const [showServicesDetails, setShowServicesDetails] = useState(false);
   const [showStoreDetails, setShowStoreDetails] = useState(false);
 
-  const handleServicesClick = () => {
-    setShowServicesDetails(!showServicesDetails);
-  };
-  const handleStoreClick = () => {
-    setShowStoreDetails(!showStoreDetails);
-  };
 
   return (
     <>
@@ -140,7 +134,7 @@ const Navigation = () => {
           }
         >
           <div className="flex justify-between md:justify-end items-center w-full md:mt-0 h-full  md:px-4 py-7 px-2 2xl:px-16 rounded">
-            <div className="md:absolute md:top-0 bottom-0 left-2 xl:w-[180px] mt-5 md:mt-0 lg:w-[160px] md:w-[140px] sm:w-[120px] w-[120px]">
+            <div className="md:hidden lg:hidden xl:hidden 2xl:hidden sm:flex md:top-0 bottom-0 left-2 xl:w-[180px] mt-5 md:mt-0 lg:w-[160px] md:w-[140px] sm:w-[120px] w-[120px]">
               <NavLink exact="true" to="/">
                 <img src={logo} alt="Muranga seals logo" className="h-28" />
               </NavLink>
@@ -235,7 +229,7 @@ const Navigation = () => {
 
           <div
             className={
-              nav ? "md:hiddden fixed left-0 top-0 w-full h-screen " : ""
+              nav ? "md:hidden fixed left-0 top-0 w-full h-screen " : ""
             }
           >
             <div
@@ -297,7 +291,7 @@ const Navigation = () => {
       <div>
         {/* Header three with logo */}
 
-        <div className="hidden md:absolute md:top-0 bottom-0 left-2 xl:w-[180px] lg:w-[160px] md:w-[140px] sm:w-[120px] w-[120px]">
+        <div className="hidden md:flex md:top-0 bottom-0 left-2 xl:w-[180px] lg:w-[160px] md:w-[140px] sm:w-[120px] w-[120px] md:absolute">
           <NavLink exact="true" to="/">
             <img src={logo} alt="Muranga seals logo" />
           </NavLink>
