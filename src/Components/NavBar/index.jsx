@@ -5,23 +5,15 @@ import {
   BsTwitter,
   BsYoutube,
 } from "react-icons/bs";
-import { React, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   AiOutlineClose,
   AiOutlineMenu,
   AiOutlineSearch,
   AiOutlineUser,
 } from "react-icons/ai";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
-import { FiPhoneCall } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
 
-import { Link } from "react-router-dom";
-import { RiMenu5Line } from "react-icons/ri";
 import { HiShoppingCart } from "react-icons/hi";
-
-import { BsChevronDown } from "react-icons/bs";
-
 import SportpesaLogo from "../../assets/SP_logo-01.png";
 import FinixCasinoLogo from "../../assets/finix-casino.png";
 import logo from "../../assets/logo.png";
@@ -29,8 +21,8 @@ import { NavLink } from "react-router-dom";
 const Navigation = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [linkColor, setLinkColor] = useState("#1f2937");
-  const [showModal, setShowModal] = useState(false);
+  // const [linkColor, setLinkColor] = useState("#1f2937");
+  // const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const handleShadow = () => {
@@ -48,8 +40,8 @@ const Navigation = () => {
     setNav(!nav);
   };
 
-  const [showServicesDetails, setShowServicesDetails] = useState(false);
-  const [showStoreDetails, setShowStoreDetails] = useState(false);
+  // const [showServicesDetails, setShowServicesDetails] = useState(false);
+  // const [showStoreDetails, setShowStoreDetails] = useState(false);
 
 
   return (

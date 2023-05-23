@@ -1,4 +1,4 @@
-import { React, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import wazitologo from "../../assets/wazitologo.png";
 import emailjs from "@emailjs/browser";
 import msealskit from "../../assets/msealskit.png";
