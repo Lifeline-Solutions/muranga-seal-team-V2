@@ -58,7 +58,7 @@ const Landing = () => {
     },
   ];
   return (
-    <div className="flex flex-col md:flex-row  m-4 md:m-[28px]">
+    <div className="flex flex-col md:flex-row mt-20  m-4 md:m-[28px]">
       <div className="md:w-[40%]">
         <img src={banner} alt="" className="md:h-[650px] h-[400px]" />
       </div>
@@ -67,11 +67,11 @@ const Landing = () => {
           {news.map((item) => (
             <div
               key={item.id}
-              className="flex justify-between mt-5 p-2  group hover:bg-[#FAE115] hover:scale-105 transition-all duration-500 cursor-pointer"
+              className="flex justify-between mt-5 p-2  group hover:bg-[#FAE115]  hover:scale-105 transition-all duration-500 cursor-pointer"
               onMouseEnter={changeImage}
             >
-              <div className="flex-col ">
-                <p className="bg-[#FAE115] p-2 flex group-hover:bg-black group-hover:text-white justify-center w-[50%] rounded-lg font-semibold">
+              <div className="flex-col">
+                <p className="bg-[#FAE115] sm:p-2 flex group-hover:bg-black group-hover:text-white justify-center sm:w-[90%]  rounded-lg font-semibold">
                   Latest News
                 </p>
                 <p className="font-bold text-sm">{item.title}</p>
@@ -79,7 +79,7 @@ const Landing = () => {
 
                 <p className="text-[#A8A2A2]">{item.date}</p>
               </div>
-              <img src={item.image} alt="" />
+              <img className="sm:w-[50%]" src={item.image} alt="" />
             </div>
           ))}
         </div>
