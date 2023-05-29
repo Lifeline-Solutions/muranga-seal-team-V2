@@ -30,7 +30,7 @@ const Schedule = () => {
   return (
     <>
       {showModal && (
-        <div className="fixed kulim-park inset-0 bg-opacity-50 z-10 flex  items-center justify-center w-[500px] mx-auto">
+        <div className="fixed kulim-park inset-0 bg-opacity-50 z-10 flex  items-center justify-center px-8 md:w-[500px] mx-auto">
           <div className="bg-white p-12 rounded-lg">
             <div className="flex justify-end">
               <button
@@ -41,7 +41,7 @@ const Schedule = () => {
               </button>
             </div>
 
-            <h2 className="text-5xl font-bold mb-2 text-[#000] text-center">
+            <h2 className=" text-2xl uppercase md:text-5xl font-bold mb-2 text-[#000] text-center">
               Make purchase
             </h2>
 
