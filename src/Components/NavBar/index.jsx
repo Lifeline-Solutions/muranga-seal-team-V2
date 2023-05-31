@@ -43,7 +43,6 @@ const Navigation = () => {
   // const [showServicesDetails, setShowServicesDetails] = useState(false);
   // const [showStoreDetails, setShowStoreDetails] = useState(false);
 
-
   return (
     <>
       <div>
@@ -258,9 +257,9 @@ const Navigation = () => {
                         NEWS
                       </li>
                     </NavLink>
-                    <NavLink exact="true" to="/news" onClick={handleNav}>
+                    <NavLink exact="true" to="/team" onClick={handleNav}>
                       <li className="hover:underline text-[#000] underline-offset-8 hover:text-[#f4e721]">
-                        NEWS
+                        TEAM
                       </li>
                     </NavLink>
                     <NavLink exact="true" to="/membership" onClick={handleNav}>

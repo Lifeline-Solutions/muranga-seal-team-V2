@@ -1,7 +1,7 @@
 const index = () => {
   return (
     <div className="p-5 md:p-0">
-      <div className="md:p-8 md:bg-[#FAE115] font-bold uppercase text-5xl">
+      <div className="mt-12 mb-5 md:p-8 md:bg-[#FAE115] font-bold uppercase text-3xl md:text-5xl">
         Membership
       </div>
       <div className="md:w-[1280px] flex flex-col gap-4 md:my-24 md:mx-auto bg-[#F7F3ED] md:p-8">
