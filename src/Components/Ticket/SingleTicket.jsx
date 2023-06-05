@@ -12,12 +12,12 @@ const SingleTicket = () => {
         <h1>Murang&apos;a seals</h1>
         <div className="flex flex-col">
           <div className="flex align-center text-center">
-            <p>Sun 29 April</p>
+            <p className="mr-1">Sun 29 April</p>
             {/* vertical line */}
             <div className="border-l-2 border-[#000] h-5"></div>
-            <p>2:00pm</p>
+            <p className="ml-1 mr-1">2:00pm</p>
             <div className="border-l-2 border-[#000] h-5"></div>
-            <p>Murang&apos;a stadium</p>
+            <p className="ml-1">Murang&apos;a stadium</p>
           </div>
 
           <div>
@@ -34,7 +34,7 @@ const SingleTicket = () => {
             background: "rgba(244, 238, 238, 0.72)",
             boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
           }}
-          className="p-4"
+          className="p-4 text-[#b9b6b2]"
         >
           General Membership
         </button>

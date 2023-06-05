@@ -58,36 +58,47 @@ const Landing = () => {
     },
   ];
   return (
-    <div className="flex flex-col md:flex-row mt-20  m-4 md:m-[28px]">
-      <div className="md:w-[40%]">
-        <img src={banner} alt="" className="md:h-[650px] h-[400px]" />
-      </div>
-      <div className="bg-white  flex flex-col md:flex-row ">
-        <div className="flex flex-col  justify-between md:mr-[20px]">
+    <div className="flex flex-col md:flex-row gap-5 mt-20  m-4 md:m-[28px]">
+      <div>
+        <div>
+          <a href="#"
+             className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row ">
+            <img className="object-cover w-full rounded-t-lg h-[400px] md:w-[750px] md:rounded-none md:rounded-l-lg hover:bg-[#FAE115]"
+                 src={banner} alt="" />
+            <div className="flex flex-col justify-between leading-normal p-2">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                technology acquisitions 2021</h5>
+              <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            </div>
+          </a>
+
+        </div>
+        <div className="flex flex-row  justify-between md:mr-[20px]">
           {news.map((item) => (
             <div
               key={item.id}
-              className="flex justify-between mt-5 p-2  group hover:bg-[#FAE115]  hover:scale-105 transition-all duration-500 cursor-pointer"
+              className="flex flex-col-reverse justify-between mt-5 p-2  group hover:bg-[#FAE115]  hover:scale-105 transition-all duration-500 cursor-pointer"
               onMouseEnter={changeImage}
             >
               <div className="flex-col">
-                <p className="bg-[#FAE115] sm:p-2 flex group-hover:bg-black group-hover:text-white justify-center sm:w-[90%]  rounded-lg font-semibold">
+                <p className="bg-[#FAE115] sm:p-2 flex group-hover:bg-black group-hover:text-white justify-center  rounded-lg font-semibold">
                   Latest News
                 </p>
                 <p className="font-bold text-sm">{item.title}</p>
                 <p className="text-sm">{item.description}</p>
-
-                <p className="text-[#A8A2A2]">{item.date}</p>
               </div>
-              <img className="sm:w-[50%]" src={item.image} alt="" />
+              <img className="" src={item.image} alt="" />
             </div>
           ))}
         </div>
-        <div className="flex flex-col md:items-end mt-5 gap-4  justify-between">
+      </div>
+      <div className="bg-white  flex flex-col md:flex-row border-t-indigo-500">
+        <div className="flex flex-col md:items-end mt-5 gap-5  ">
           {featuredNews.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col md:w-[303px]   text-white bg-black"
+              className="flex flex-col md:w-[303px] text-white bg-black"
             >
               <img src={item.image} alt="" className="md:w-[300px]" />
               <p className=" text-xs p-2">Featured</p>
