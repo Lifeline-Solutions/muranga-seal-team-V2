@@ -8,7 +8,7 @@ const index = () => {
         <h1 className="md:text-5xl text-2xl ">
           JOIN OUR MEMBERSHIP TODAY AND ENJOY OUR PREMIUM SERVICES
         </h1>
-        <p className="text-xl">
+        <p className="text-xl font-light mt-5">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
           nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
           volutpat. Ut wisi Lorem ipsum dolor sit amet, consectetuer adipiscing
