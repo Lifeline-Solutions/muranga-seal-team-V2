@@ -56,11 +56,6 @@ const Landing = () => {
       title: "DONT MISS THIS GAME FOR ALL STARS VS SEALS",
       image: featured1,
     },
-    {
-      id: 2,
-      title: "DONT MISS THIS GAME FOR ALL STARS VS SEALS",
-      image: featured1,
-    },
   ];
   return (
     <div className="flex flex-col md:flex-row gap-5 mt-20  m-4 md:m-[28px]">
