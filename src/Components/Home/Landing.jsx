@@ -65,8 +65,19 @@ const Landing = () => {
   return (
     <div className="flex flex-col md:flex-row gap-5 mt-20  m-4 md:m-[28px]">
       <div>
-        <div className="">
-          <img src={banner} alt="" className="md:h-[650px] h-[400px]" />
+        <div>
+          <a href="#"
+             className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row ">
+            <img className="object-cover w-full rounded-t-lg h-[400px] md:w-[750px] md:rounded-none md:rounded-l-lg hover:bg-[#FAE115]"
+                 src={banner} alt="" />
+            <div className="flex flex-col justify-between leading-normal p-2">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy
+                technology acquisitions 2021</h5>
+              <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise
+                technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            </div>
+          </a>
+
         </div>
         <div className="flex flex-row  justify-between md:mr-[20px]">
           {news.map((item) => (
@@ -87,7 +98,7 @@ const Landing = () => {
           ))}
         </div>
       </div>
-      <div className="bg-white  flex flex-col md:flex-row ">
+      <div className="bg-white  flex flex-col md:flex-row border-t-indigo-500">
         <div className="flex flex-col md:items-end mt-5 gap-5  ">
           {featuredNews.map((item) => (
             <div
