@@ -66,7 +66,7 @@ const Landing = () => {
                  src={banner} alt="Muranga seals" />
             <div className="flex flex-col justify-between leading-normal p-5">
               <h5 className="mb-6 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">A Win For Seals</h5>
-              <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">Murang'a Seals defeated Shaban FC 2-0</p>
+              <p className="mb-2 font-normal text-gray-700 dark:text-gray-400">Murang&rsquo;a Seals defeated Shaban FC 2-0</p>
               <p className="bg-[#FAE115] sm:p-2 flex group-hover:bg-black group-hover:text-white justify-center  rounded-lg font-semibold">
                 Read More
               </p>
