@@ -22,7 +22,7 @@ const index = () => {
     },
     {
       id: 3,
-      image: clubhistory3,
+      image: clubhistory2,
       title: "OUR SPONSORS  &  PARTNERS ",
       content:
         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi ",
@@ -74,8 +74,8 @@ const index = () => {
               </button>
             </div>
 
-            <div className="my-10 mx-10">
-              <img src={clubhistory.image} alt="logo" />
+            <div className="my-10 md:mx-10">
+              <img src={clubhistory.image} alt="logo" className="md:w-[464px] md:h-[464px] h-[336px] w-[336px]" />
             </div>
           </div>
         ))}
